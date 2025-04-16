@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagrama RBS - Genios Traviesos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fefefe;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .tree {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 80px;
+    }
+    .branch {
+      flex: 1;
+      min-width: 300px;
+    }
+    .tree ul {
+      list-style: none;
+      padding-left: 20px;
+      position: relative;
+    }
+    .tree li {
+      margin: 0 0 10px 20px;
+      position: relative;
+      padding-left: 20px;
+    }
+    .tree li::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      border-left: 2px solid #ccc;
+      height: 100%;
+    }
+    .tree li::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 20px;
+      border-top: 2px solid #ccc;
+    }
+    .node {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background: #fff;
+      position: relative;
+    }
+    .risk {
+      display: inline-block;
+      background-color: #fdf2e9;
+      border: 1px dashed #e67e22;
+      padding: 6px 14px;
+      border-radius: 5px;
+      font-size: 0.95em;
+      color: #e67e22;
+      margin-left: 10px;
+    }
+    .link-volver a {
+      text-decoration: none;
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <div class="link-volver">
+        <a href="index.html">← Volver al inicio</a>
+      </div>
+  <h1>Diagrama RBS - Proyecto Genios Traviesos</h1>
+  <div class="tree">
+    <div class="branch">
+      <div class="node">Riesgos Técnicos</div>
+      <ul>
+        <li><div class="node">1.3.2 Desarrollo backend</div><span class="risk">Fallas en integración con sistemas existentes</span></li>
+        <li><div class="node">1.3.3.7 Diseño responsive</div><span class="risk">Problemas de visualización en móviles</span></li>
+        <li><div class="node">1.3.1.4 Generación de reportes exportables</div><span class="risk">Errores en formato o exportación de datos</span></li>
+        <li><div class="node">1.4.3 Verificación de conexiones</div><span class="risk">Fallas en la instalación física del hardware</span></li>
+        <li><div class="node">2.4.1.1 Reconocimiento de patentes</div><span class="risk">Lectura incorrecta de patentes</span></li>
+        <li><div class="node">2.4.3.2 Dashboard en tiempo real</div><span class="risk">Datos no actualizados en la interfaz</span></li>
+        <li><div class="node">3.3.1.5 Validación en punto de venta</div><span class="risk">Errores en validación QR</span></li>
+      </ul>
+    </div>
+
+    <div class="branch">
+      <div class="node">Riesgos de Gestión</div>
+      <ul>
+        <li><div class="node">1.1.1 Reunión con equipo directivo</div><span class="risk">Falta de alineación en los objetivos del proyecto</span></li>
+        <li><div class="node">1.2.1 Cotización y selección de proveedores</div><span class="risk">Demoras por mala elección de proveedor</span></li>
+        <li><div class="node">1.5.2 Configuración de horarios y reglas</div><span class="risk">Parámetros mal configurados</span></li>
+        <li><div class="node">1.7.2 Ajustes finales</div><span class="risk">Tiempos insuficientes para corregir errores</span></li>
+        <li><div class="node">2.6.3 Validación cruzada</div><span class="risk">Errores por datos incompletos</span></li>
+        <li><div class="node">3.5.2 Impresión y entrega</div><span class="risk">Retrasos por fallas logísticas</span></li>
+        <li><div class="node">3.7.2 Correcciones</div><span class="risk">Cambios mal ejecutados en ambiente real</span></li>
+        <li><div class="node">3.7.1 Simulación con alumnos</div><span class="risk">Simulaciones poco realistas afectan la puesta en marcha</span></li>
+        <li><div class="node">3.4.1 Enlace con sistema académico</div><span class="risk">Incompatibilidad entre sistemas</span></li>
+      </ul>
+    </div>
+
+    <div class="branch">
+      <div class="node">Riesgos Organizacionales</div>
+      <ul>
+        <li><div class="node">1.6.2 Sesiones prácticas</div><span class="risk">Falta de compromiso del personal</span></li>
+        <li><div class="node">1.6.3 Resolución de dudas</div><span class="risk">Falta de canales para soporte adecuado</span></li>
+        <li><div class="node">3.6.1 Uso de lector QR</div><span class="risk">Resistencia a nueva tecnología</span></li>
+        <li><div class="node">3.6.3 Apoyo en primera semana</div><span class="risk">Falta de personal capacitado</span></li>
+        <li><div class="node">3.1.2 Reuniones con apoderados</div><span class="risk">Falta de participación en el diseño del sistema</span></li>
+        <li><div class="node">3.1.1 Revisión del proceso actual</div><span class="risk">Visión incompleta del flujo existente</span></li>
+        <li><div class="node">1.6.1 Manuales y videos</div><span class="risk">Material de capacitación poco claro</span></li>
+      </ul>
+    </div>
+
+    <div class="branch">
+      <div class="node">Riesgos Externos</div>
+      <ul>
+        <li><div class="node">2.5.1 Ubicación estratégica</div><span class="risk">Mala cobertura de red</span></li>
+        <li><div class="node">2.1.3 Entrevistas con comunidad escolar</div><span class="risk">Falta de colaboración o sesgo</span></li>
+        <li><div class="node">3.2.1 Lectores de QR</div><span class="risk">Proveedores no cumplen plazos</span></li>
+        <li><div class="node">3.2.2 Impresoras de credenciales</div><span class="risk">Fallas técnicas de impresión masiva</span></li>
+        <li><div class="node">3.4.2 Importación de datos</div><span class="risk">Errores al importar de sistemas externos</span></li>
+        <li><div class="node">2.3.1 Cotización de cámaras IA</div><span class="risk">Cambio de precios inesperado</span></li>
+        <li><div class="node">3.4.3 Asociación de tarjetas</div><span class="risk">Fallo en la vinculación con usuarios</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
